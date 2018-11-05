@@ -4,23 +4,25 @@ public class Main
 {
 	public static void main(String[] args) 
 	{
-		try 
+		try
 		{
 			Rectangle r1 = new Rectangle(2,3);
 			Square s1 = new Square(5);
-		
+
 			doPrint(r1, s1);
-				
+
 			r1.setLength(10);
 			r1.setWidth(15);
-			
+			s1.setSide(8);
+
 			doPrint(r1, s1);
-			
-			s1.setLength(10);
-			s1.setWidth(20);
+
+//			s1.setLength(10);
+//			s1.setWidth(20);
+            s1.setSide(20);
 			doPrint(r1, s1);
-		} 
-		catch (Throwable e) 
+		}
+		catch (Throwable e)
 		{
 			System.out.println("\nERROR\n");
 			e.printStackTrace();

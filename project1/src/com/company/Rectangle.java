@@ -1,12 +1,13 @@
 package com.company;
 
-public class Rectangle
+public class Rectangle implements Shape
 {
 	public Rectangle()
 	{
 		this(1,1);
 	}
-	
+
+
 	public Rectangle(int length, int width)
 	{
 		mLength = length;
