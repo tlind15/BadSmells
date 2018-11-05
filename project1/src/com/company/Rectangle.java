@@ -1,40 +1,39 @@
-package com.company;
 
-public class Rectangle
-{
-	public Rectangle()
-	{
-		this(1,1);
+public class Rectangle {
+	public Rectangle() {
+		this(1, 1);
 	}
-	
-	public Rectangle(int length, int width)
-	{
+
+	public Rectangle(int length, int width) {
 		mLength = length;
 		mWidth = width;
 	}
-	
-	public void setLength(int length) throws Throwable
-	{
-		if(length <= 0) throw new Throwable("Invalid length");
+
+	public void setLength(int length) throws Throwable {
+		if (length <= 0)
+			throw new Throwable("Invalid length");
 		mLength = length;
 	}
-	
-	public void setWidth(int width) throws Throwable
-	{
-		if(width <= 0) throw new Throwable("Invalid width");
+
+	public void setWidth(int width) throws Throwable {
+		if (width <= 0)
+			throw new Throwable("Invalid width");
 		mWidth = width;
 	}
 	
-	public int getPerimeter()
-	{
+	public void setSide(int side) throws Throwable {
+		mWidth = side;
+		mLength = side;
+	}
+	
+	public int getPerimeter() {
 		return 2 * mWidth + 2 * mLength;
 	}
-	
-	public int getArea()
-	{
+
+	public int getArea() {
 		return mLength * mWidth;
 	}
-	
+
 	private int mLength;
 	private int mWidth;
 }
