@@ -22,11 +22,13 @@ public class Main {
 	}
 
 	public static void doPrint(Rectangle r, Square s) {
-		System.out.println("Area of rectangle is " + r.getArea());
-		System.out.println("Perimeter of rectangle is " + r.getPerimeter());
-
-		System.out.println("Area of square is " + s.getArea());
-		System.out.println("Perimeter of square is " + s.getPerimeter());
+		printDetails(r);
+		printDetails(s);
+	}
+	
+	public static void printDetails(Rectangle rect) {
+		System.out.println("Area of " + rect.getClass().getName() + " is " + rect.getArea());
+		System.out.println("Perimeter of " + rect.getClass().getName() + " is " + rect.getPerimeter());
 	}
 
 }
