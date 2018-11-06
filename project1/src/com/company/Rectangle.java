@@ -1,5 +1,5 @@
 
-public class Rectangle {
+public class Rectangle implements RectInterface{
 	public Rectangle() {
 		this(1, 1);
 	}
