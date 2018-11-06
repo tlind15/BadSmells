@@ -2,30 +2,28 @@ package com.company;
 
 // Every Square "is-a" Rectangle so use Inheritance
 
-public class Square extends Rectangle 
+public class Square implements Shape
 {
+    private Rectangle r;
+
 	public Square(int side)
 	{
-		super(side, side);
+		r = new Rectangle(side, side);
 	}
 	
 	public void setSide(int side) throws Throwable
 	{
-		super.setLength(side);
-		super.setWidth(side);
+		r.setLength(side);
+		r.setWidth(side);
 	}
-	
-	@Override
-	public void setLength(int length) throws Throwable
-	{
-		throw new Throwable("Squares do not have a length independent from width");
-	}
-	
-	@Override
-	public void setWidth(int width) throws Throwable
-	{
-		throw new Throwable("Squares do not have a width independent from length");
-	}
-	
 
+	@Override
+    public int getPerimeter() {
+	    return r.getPerimeter();
+    }
+
+    @Override
+    public int getArea() {
+	    return r.getArea();
+    }
 }

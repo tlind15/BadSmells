@@ -16,8 +16,7 @@ public class Main
 			
 			doPrint(r1, s1);
 			
-			s1.setLength(10);
-			s1.setWidth(20);
+			s1.setSide(10);
 			doPrint(r1, s1);
 		} 
 		catch (Throwable e) 
