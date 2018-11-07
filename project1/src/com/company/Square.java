@@ -16,7 +16,7 @@ public class Square implements Shape
 		r.setLength(side);
 		r.setWidth(side);
 	}
-
+	
 	@Override
     public int getPerimeter() {
 	    return r.getPerimeter();
