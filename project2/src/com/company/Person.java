@@ -1,5 +1,6 @@
+package com.company;
 
-public class Person 
+public class Person
 {
 	public Person()
 	{

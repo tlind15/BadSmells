@@ -1,5 +1,6 @@
+package com.company;
 
-public class Name 
+public class Name
 {
 	public Name()
 	{
