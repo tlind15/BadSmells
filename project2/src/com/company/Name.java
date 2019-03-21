@@ -19,7 +19,7 @@ public class Name
 	public String getMiddle() { return mMiddle; }
 	public String getLast() { return mLast; }
 	public String getTitle() { return mTitle; }
-	
+	public String getName() {return getTitle() + " " + getFirst() + " " + getMiddle() + " " + getLast();}
 
 	private String mFirst;
 	private String mMiddle;

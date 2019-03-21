@@ -1,10 +1,23 @@
 
+<<<<<<< HEAD
 public class Rectangle implements RectInterface{
 	public Rectangle() {
 		this(1, 1);
 	}
 
 	public Rectangle(int length, int width) {
+=======
+public class Rectangle implements Shape
+{
+	public Rectangle()
+	{
+		this(1,1);
+	}
+
+
+	public Rectangle(int length, int width)
+	{
+>>>>>>> f076d828d0df3a9ace9d9f2bec194df67bff07d0
 		mLength = length;
 		mWidth = width;
 	}
